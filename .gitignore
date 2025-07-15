@@ -10,6 +10,7 @@ __pycache__/
 build/
 dist/
 downloads/
+data/
 
 # Virtual Environment
 .venv/
@@ -41,3 +42,4 @@ htmlcov/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+session*
