@@ -1,0 +1,43 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+
+# Virtual Environment
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Docker
+.docker
+
+# Local development
+.DS_Store
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
