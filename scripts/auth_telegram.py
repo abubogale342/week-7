@@ -46,12 +46,12 @@ async def authenticate():
             # Send code request
             phone = telegram_config['phone']
             await client.send_code_request(phone)
-            
+        
             # Ask for the code
             print("\nA verification code has been sent to your Telegram account.")
             print("Please enter the code you received (format: 1 2 3 4 5): ")
             code = input("Code: ").strip()
-            
+        
             try:
                 # Sign in with the code
                 await client.sign_in(phone, code)
@@ -63,7 +63,7 @@ async def authenticate():
                 print("Successfully signed in with 2FA!")
         else:
             print("Already authorized. No need to sign in again.")
-            
+        
         # Get and display some basic info
         me = await client.get_me()
         print(f"\nLogged in as: {me.first_name} ({me.phone})")
